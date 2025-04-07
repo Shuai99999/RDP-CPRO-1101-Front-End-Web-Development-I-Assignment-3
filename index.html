@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travis' Cat Family</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="sticky-top">
+        <nav
+          class="navbar navbar-expand-lg navbar-dark"
+          style="background-color: #6a0dad"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Travis' Cat Family</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="mona.html">Mona</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tenley.html">Tenley</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="maxwell.html">Maxwell</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="row">
+        <aside class="col-md-3 sidebar">
+          <div class="poll-container p-3">
+            <h4>Favorite Cat Poll</h4>
+            <form id="catPoll">
+              <div class="mb-3">
+                <label for="userName" class="form-label">Your Name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Favorite Cat:</label>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="favCat"
+                    id="mona"
+                    value="Mona"
+                  />
+                  <label class="form-check-label" for="mona">Mona</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="favCat"
+                    id="tenley"
+                    value="Tenley"
+                  />
+                  <label class="form-check-label" for="tenley">Tenley</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="favCat"
+                    id="maxwell"
+                    value="Maxwell"
+                  />
+                  <label class="form-check-label" for="maxwell">Maxwell</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div id="pollResults" class="mt-3">
+              <h5>Current Results:</h5>
+              <div class="progress mb-2">
+                <div
+                  class="progress-bar bg-danger"
+                  role="progressbar"
+                  style="width: 35%"
+                >
+                  Maxwell: 7
+                </div>
+              </div>
+              <div class="progress mb-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 30%; background-color: brown"
+                >
+                  Tenley: 6
+                </div>
+              </div>
+              <div class="progress mb-2">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 20%; background-color: magenta"
+                >
+                  Mona: 4
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-nav p-3">
+            <h4>Blog Posts</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#post1"
+                  >Mona and Tenley Fighting
+                  <span class="badge bg-primary">New</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#post2">Traveling</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#post3">Space Making Post</a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+
+        <main class="col-md-9 main-content">
+          <h1 class="mb-4">Welcome to Travis' Cat Family</h1>
+
+          <article id="post1" class="blog-post mb-5">
+            <h2>
+              Mona and Tenley Fighting <span class="badge bg-primary">New</span>
+            </h2>
+            <div class="tags mb-3">
+              <span class="badge bg-secondary">Short</span>
+              <span class="badge bg-secondary">Mona</span>
+              <span class="badge bg-secondary">Tenley</span>
+              <span class="badge bg-secondary">English</span>
+            </div>
+            <p>
+              Gosh, they sure do love to fight a lot – their personalities just
+              clash. Mona is so anxious and shy all the time, and Tenley is
+              young and rambunctious and loves to play, so they just don't get
+              along sometimes! I've tried many things to help, but the best
+              thing to do is to have my partner and I play with each of them
+              separately and give them lots of cuddles – that does the trick!
+            </p>
+          </article>
+
+          <article id="post2" class="blog-post mb-5">
+            <h2>Traveling</h2>
+            <div class="tags mb-3">
+              <span class="badge bg-secondary">Short</span>
+              <span class="badge bg-secondary">Tenley</span>
+              <span class="badge bg-secondary">English</span>
+            </div>
+            <p>
+              Dangit, I have to go to New Orleans for a conference which means
+              leaving my poor little kitties behind! I can't imagine they would
+              enjoy such a trip... Tenley is terrified of leaving the house.
+              Every time I put her on a little harness to go for a walk, she
+              panics and runs back inside. What a strange cat!
+            </p>
+          </article>
+
+          <article id="post3" class="blog-post mb-5">
+            <h2>Space Making Post</h2>
+            <div class="tags mb-3">
+              <span class="badge bg-secondary">Long</span>
+              <span class="badge bg-secondary">Maxwell</span>
+              <span class="badge bg-secondary">Latin</span>
+            </div>
+            <p>
+              This is just to test your layout. It's a bunch of lorem ipsum,
+              which Maxwell spoke fluently.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              egestas lobortis arcu, nec mattis diam consectetur at. Quisque nec
+              leo id leo aliquet finibus. Praesent ut risus mattis libero
+              condimentum dictum imperdiet eget nibh. Donec elit erat, finibus
+              vel rhoncus in, tincidunt ac lorem. Phasellus vestibulum ipsum et
+              lorem gravida, commodo accumsan magna posuere. Proin sodales
+              egestas pellentesque. Pellentesque habitant morbi tristique
+              senectus et netus et malesuada fames ac turpis egestas. Etiam a
+              nibh at est condimentum porttitor ut quis est. Donec accumsan
+              lobortis purus, eget rhoncus tellus varius lacinia. Suspendisse
+              potenti. Sed mollis egestas tempus. Duis a lectus libero. Nam sed
+              est turpis. Nunc justo arcu, feugiat quis elit eu, cursus euismod
+              mi. Curabitur rutrum nisl libero, in elementum neque volutpat
+              euismod. Mauris semper sollicitudin purus nec tempus.
+            </p>
+            <p>
+              Ut mattis nulla sem, ac tristique est aliquam et. Maceenas lorem
+              velit, ornare quis aliquam sed, viverra vitae diam. Duis et sem
+              mi. Praesent pretium nisi interdum, ullamcorper nisl non, pharetra
+              orci. Vestibulum ante ipsum primis in faucibus orci luctus et
+              ultrices posuere cubilia curae; Integer ullamcorper sit amet quam
+              ac tincidunt. Proin eget faucibus nisi. Donec finibus facilisis
+              felis non consectetur. Aliquam quis volutpat tellus, vitae
+              condimentum urna. Praesent vitae augue fringilla, pretium eros
+              vel, ultrices lectus.
+            </p>
+          </article>
+        </main>
+      </div>
+
+      <footer class="footer mt-auto py-3">
+        <div class="container">
+          <span class="footer-text"
+            >&copy; 2025 WINTER WEB A3 | Website created by Bright & Shuai &
+            Abdallah. Images supplied by Travis Cattington. | All Rights
+            Reserved</span
+          >
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
