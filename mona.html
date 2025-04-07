@@ -9,14 +9,7 @@
       rel="stylesheet"
     />
     <link href="../styles/main.css" rel="stylesheet" />
-    <style>
-      .highlight {
-        background-color: magenta;
-        color: white;
-        padding: 2px 5px;
-        border-radius: 3px;
-      }
-    </style>
+    <link href="../styles/mona.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container-fluid">
@@ -57,67 +50,82 @@
 
       <div class="row">
         <aside class="col-md-3 sidebar">
-          <div class="card mb-3">
-            <img
-              src="../images/mona1.jpg"
-              class="card-img-top"
-              alt="Mona sleeping"
-            />
-            <div class="card-body">
-              <p class="card-text">
-                Mona sleeping peacefully in her favorite spot.
-              </p>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <img
-              src="../images/mona2.jpg"
-              class="card-img-top"
-              alt="Mona playing"
-            />
-            <div class="card-body">
-              <p class="card-text">Mona playing with her favorite toy.</p>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <img
-              src="../images/mona3.jpg"
-              class="card-img-top"
-              alt="Mona looking"
-            />
-            <div class="card-body">
-              <p class="card-text">Mona looking curiously out the window.</p>
+          <div class="sticky-top pt-3">
+            <div class="d-flex flex-column">
+              <div class="card border-0 mb-3 shadow-sm">
+                <img
+                  src="images/mona-card1.jpg"
+                  class="card-img-top"
+                  alt="Mona sleeping"
+                />
+                <div class="card-body">
+                  <p class="card-text text-muted small">
+                    "Napping in the sunlight"
+                  </p>
+                  <div class="cat-action-badge bg-magenta-light">Resting</div>
+                </div>
+              </div>
+
+              <div class="card border-0 mb-3 shadow-sm">
+                <img
+                  src="images/mona-card2.jpg"
+                  class="card-img-top"
+                  alt="Mona observing"
+                />
+                <div class="card-body">
+                  <p class="card-text text-muted small">
+                    "Watching birds outside"
+                  </p>
+                  <div class="cat-action-badge bg-magenta-light">Curious</div>
+                </div>
+              </div>
+
+              <div class="card border-0 mb-3 shadow-sm">
+                <img
+                  src="images/mona-card3.jpg"
+                  class="card-img-top"
+                  alt="Mona playing"
+                />
+                <div class="card-body">
+                  <p class="card-text text-muted small">
+                    "Playing with toy mouse"
+                  </p>
+                  <div class="cat-action-badge bg-magenta-light">Active</div>
+                </div>
+              </div>
             </div>
           </div>
         </aside>
 
         <main class="col-md-9 main-content">
-          <h1 class="mb-4">Mona <span class="highlight">Magenta</span></h1>
+          <h1 class="mb-4">
+            Mona <span class="highlight">The Shy Sweetheart</span>
+          </h1>
 
           <div
             id="monaCarousel"
-            class="carousel slide mb-5"
+            class="carousel slide mb-5 mx-auto"
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="../images/mona1.jpg"
-                  class="d-block w-100"
+                  src="../images/mona-carousel1.png"
+                  class="d-block w-100 img-fluid"
                   alt="Mona photo 1"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="../images/mona2.jpg"
-                  class="d-block w-100"
+                  src="../images/mona-carousel2.png"
+                  class="d-block w-100 img-fluid"
                   alt="Mona photo 2"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="../images/mona3.jpg"
-                  class="d-block w-100"
+                  src="../images/mona-carousel3.png"
+                  class="d-block w-100 img-fluid"
                   alt="Mona photo 3"
                 />
               </div>
