@@ -24,8 +24,9 @@
   width: 50%;
 }
 
-.carousel-item {
-  height: 430px;
+.img-fluid {
+  width: 677px;
+  height: 451px;
 }
 
 .bio {
