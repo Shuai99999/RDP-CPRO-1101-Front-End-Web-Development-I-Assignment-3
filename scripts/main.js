@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const catPollForm = document.getElementById("catPoll");
   const pollResults = document.getElementById("pollResults");
+  const btnSubmit = document.getElementById("btn-submit");
+  // const btnSubmit = document.getElementById("catPoll");
 
   // Initialize vote counts from localStorage or set defaults
   let votes = JSON.parse(localStorage.getItem("catVotes")) || {
@@ -80,6 +82,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       catPollForm.after(confirmation);
+
+      // Remove the submit button
+      // btnSubmit.style.visibility = "hidden";
+      btnSubmit.style.display = "none";
 
       // Reset form
       catPollForm.reset();
